@@ -1,0 +1,25 @@
+GET http://localhost:3000/videos
+
+###
+GET http://localhost:3000/videos/62eab8be5eb9ec55231cf984
+
+###
+POST http://localhost:3000/videos/
+Content-Type: application/json
+
+{
+    "url": "http:facebook.com",
+    "title": "video de facebook",
+    "description": "Facebook"
+}
+
+###
+DELETE  http://localhost:3000/videos/62eabae0dc5d42a325c16e2b
+
+
+###
+PUT  http://localhost:3000/videos/62eab8be5eb9ec55231cf984
+Content-Type: application/json
+{
+    "descriptions": "video Parctico Docker"
+}
